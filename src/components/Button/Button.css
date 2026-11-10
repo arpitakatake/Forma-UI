@@ -1,0 +1,59 @@
+
+.forma-button {
+  border: 1px solid transparent;
+  border-radius: 8px;
+  font-family: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.forma-button--small {
+  padding: 8px 14px;
+  font-size: 13px;
+}
+
+.forma-button--medium {
+  padding: 11px 20px;
+  font-size: 14px;
+}
+
+.forma-button--large {
+  padding: 14px 26px;
+  font-size: 16px;
+}
+
+.forma-button--primary {
+  background: #A6B6A0;
+  color: #17191D;
+}
+
+.forma-button--primary:hover:not(:disabled) {
+  background: #C0CEBA;
+  transform: translateY(-1px);
+}
+
+.forma-button--secondary {
+  background: #303B35;
+  color: #C5D2BE;
+  border-color: #455349;
+}
+
+.forma-button--secondary:hover:not(:disabled) {
+  background: #3B4940;
+}
+
+.forma-button--outline {
+  background: transparent;
+  border-color: #758A76;
+  color: #B8C8B2;
+}
+
+.forma-button--outline:hover:not(:disabled) {
+  background: #303B35;
+}
+
+.forma-button:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}

@@ -1,0 +1,37 @@
+
+.forma-card {
+  background: #22262D;
+  border: 1px solid #373C45;
+  border-radius: 14px;
+  padding: 24px;
+  transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.forma-card:hover {
+  border-color: #758A76;
+  transform: translateY(-2px);
+}
+
+.forma-card__title {
+  color: #F4F1EA;
+  font-size: 19px;
+  font-weight: 600;
+  margin: 0 0 8px;
+}
+
+.forma-card__description {
+  color: #A1A5AC;
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.forma-card__content {
+  margin-top: 18px;
+}
+
+.forma-card__footer {
+  border-top: 1px solid #373C45;
+  margin-top: 20px;
+  padding-top: 16px;
+}

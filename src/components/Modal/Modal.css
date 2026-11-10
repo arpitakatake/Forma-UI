@@ -1,0 +1,86 @@
+
+.forma-modal-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: rgba(8, 10, 13, 0.78);
+  backdrop-filter: blur(5px);
+  animation: forma-fade-in 0.2s ease;
+}
+
+.forma-modal {
+  width: 100%;
+  max-width: 460px;
+  background: #22262D;
+  border: 1px solid #454B55;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+  animation: forma-modal-in 0.25s ease;
+}
+
+.forma-modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 22px 24px;
+  border-bottom: 1px solid #373C45;
+}
+
+.forma-modal__header h2 {
+  margin: 0;
+  color: #F4F1EA;
+  font-size: 19px;
+}
+
+.forma-modal__close {
+  border: none;
+  background: transparent;
+  color: #A1A5AC;
+  font-size: 26px;
+  cursor: pointer;
+}
+
+.forma-modal__close:hover {
+  color: #F4F1EA;
+}
+
+.forma-modal__body {
+  padding: 24px;
+  color: #B5B8BE;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.forma-modal__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 16px 24px;
+  border-top: 1px solid #373C45;
+}
+
+@keyframes forma-fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes forma-modal-in {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 480px) {
+  .forma-modal {
+    max-width: 100%;
+  }
+}
